@@ -1,14 +1,20 @@
 .wrapper
   #info
-    .twitter
-      = link_to image_tag('follow_bird-c.png'), 'http://twitter.com/pierrevalade'
     .image= image_tag 'pierre.jpg'
     .text
       .name
         Pierre Valade
       .baseline
-        I'm a geek!
-  
+        %p
+          I'm a geek!
+          %span
+            = link_to 'Follow me', 'http://twitter.com/pierrevalade'    
+        %p
+          = link_to image_tag('Linkedin-1.png'), 'http://fr.linkedin.com/in/pierrevalade'
+          = link_to image_tag('Facebook.png'), 'http://www.facebook.com/pierrevalade'
+          /= link_to image_tag('Flickr.png'), ''
+          = link_to image_tag('RSS.png'), 'http://blog.pierrevalade.com'
+        
     .clear
     
 #twitter
@@ -44,3 +50,10 @@
       }
     }).render().setUser('pierrevalade').start();
     </script>
+    
+    
+#photos
+  .image= image_tag('_IGP3162.jpg')
+  .image= image_tag('_IGP3311.jpg')
+  .image= image_tag('_IGP3174.jpg')
+  .image= image_tag('_IGP3266.jpg')

@@ -1,10 +1,8 @@
 html
   :background-color #43484c
   //:background-color #949494
-  :background-image url(/images/background.jpg)
-  :background-image url(/images/backgroundr.jpg)
-  :background-repeat no-repeat
-  :background-position top center
+  :background-image url(/images/bg.png)
+
   
 #custom-doc
   :width 42.54em
@@ -17,8 +15,14 @@ html
   :clear both
 
 body
-  :margin 20px 0
+  :margin 70px 0
   :font-family Lucida Grande, Verdana, Arial
+  
+.twitter
+  :float right
+  :margin-top -20px
+  :margin-right -20px
+  
 
 #bd
   :border-width 1px 1px 1px 1px
@@ -28,9 +32,8 @@ body
   //:-webkit-border-radius 10px 10px 0 0
   :background-color #e8e8e8
   //:opacity 0.85
-  
-  :min-height 400px    
-    
+  :padding-bottom 20px
+      
 #hd
   :margin-top 10px
   :color #d2d2d2
@@ -41,8 +44,6 @@ body
 .welcome.index
   #info
     :padding 20px
-    .twitter
-      :float right
     .image
       :float left
       :border 1px solid #b7b7b7
@@ -51,9 +52,22 @@ body
       .name
         :font-size 189%
       .baseline
-        :margin-top 10px
-        :font-size 138.5%
+        :font-size 131%
+        p
+          :margin-top 10px
+        a
+          :margin-right 5px
   #twitter
     :padding 0 15px
+    :min-height 200px
     .twtr-hd, .twtr-ft
       :display none
+      
+      
+  #photos
+    :padding 0 20px
+    .image
+      :float left
+      :margin 0 11px 0 11px
+      :border 1px solid #b7b7b7
+    

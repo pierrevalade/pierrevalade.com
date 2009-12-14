@@ -7,6 +7,8 @@
     %link{:rel => "image_src", :href => "http://pierrevalade.com/images/pierre.jpg"}
   %body
     #custom-doc
+      .twitter
+        = link_to image_tag('twitter.png'), 'http://twitter.com/pierrevalade'
       #bd{:class => "#{controller.controller_name} #{controller.action_name}"}
         = yield
         .clear
