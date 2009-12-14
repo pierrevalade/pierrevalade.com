@@ -1,0 +1,16 @@
+%html
+  %head
+    %title= "Pierre Valade"
+    = stylesheet_link_tag "http://yui.yahooapis.com/2.8.0r4/build/reset-fonts-grids/reset-fonts-grids.css"
+    = stylesheet_link_tag "welcome.css"
+    %meta{:name => "description", :content => "Official page of Pierre Valade"}
+    %link{:rel => "image_src", :href => "http://pierrevalade.com/images/pierre.jpg"}
+  %body
+    #custom-doc
+      #bd{:class => "#{controller.controller_name} #{controller.action_name}"}
+        = yield
+        .clear
+        
+    #hd
+      photos
+      = link_to 'Romain David', 'http://twitter.com/romain_david'

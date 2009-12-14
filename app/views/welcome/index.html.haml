@@ -1,0 +1,46 @@
+.wrapper
+  #info
+    .twitter
+      = link_to image_tag('follow_bird-c.png'), 'http://twitter.com/pierrevalade'
+    .image= image_tag 'pierre.jpg'
+    .text
+      .name
+        Pierre Valade
+      .baseline
+        I'm a geek!
+  
+    .clear
+    
+#twitter
+  :plain  
+    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+    <script>
+    new TWTR.Widget({
+      version: 2,
+      type: 'profile',
+      rpp: 4,
+      interval: 6000,
+      width: 'auto',
+      height: 300,
+      theme: {
+        shell: {
+          background: '#e8e8e8',
+          color: '#000000'
+        },
+        tweets: {
+          background: '#e8e8e8',
+          color: '#000000',
+          links: '#000000'
+        }
+      },
+      features: {
+        scrollbar: false,
+        loop: false,
+        live: false,
+        hashtags: true,
+        timestamp: true,
+        avatars: false,
+        behavior: 'all'
+      }
+    }).render().setUser('pierrevalade').start();
+    </script>

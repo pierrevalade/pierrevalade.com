@@ -1,0 +1,53 @@
+html {
+  background-color: #43484c;
+  background-image: url(/images/background.jpg);
+  background-image: url(/images/backgroundr.jpg);
+  background-repeat: no-repeat;
+  background-position: top center; }
+
+#custom-doc {
+  width: 42.54em;
+  *width: 41.51em;
+  min-width: 553px;
+  margin: auto;
+  text-align: left; }
+
+.clear {
+  clear: both; }
+
+body {
+  margin: 20px 0;
+  font-family: Lucida Grande, Verdana, Arial; }
+
+#bd {
+  border-width: 1px 1px 1px 1px;
+  border-color: #5e5e5e;
+  border-style: solid;
+  background-color: #e8e8e8;
+  min-height: 400px; }
+
+#hd {
+  margin-top: 10px;
+  color: #d2d2d2;
+  font-size: 85%; }
+  #hd a {
+    color: #d2d2d2; }
+
+.welcome.index #info {
+  padding: 20px; }
+  .welcome.index #info .twitter {
+    float: right; }
+  .welcome.index #info .image {
+    float: left;
+    border: 1px solid #b7b7b7; }
+  .welcome.index #info .text {
+    margin-left: 220px; }
+    .welcome.index #info .text .name {
+      font-size: 189%; }
+    .welcome.index #info .text .baseline {
+      margin-top: 10px;
+      font-size: 138.5%; }
+.welcome.index #twitter {
+  padding: 0 15px; }
+  .welcome.index #twitter .twtr-hd, .welcome.index #twitter .twtr-ft {
+    display: none; }
