@@ -1,0 +1,25 @@
+%html
+  %head
+    %title= "My domains names | Pierre Valade"
+    = stylesheet_link_tag "http://yui.yahooapis.com/2.8.0r4/build/reset-fonts-grids/reset-fonts-grids.css"
+    = stylesheet_link_tag "welcome.css"
+    %meta{:name => "description", :content => "This a domain name that I may want to sell"}
+    <meta name="google-site-verification" content="ERsrKszS2eKc00D_uNaVDCUWfeBt-Jj6HobGvXSQcnE" />
+  %body
+    #doc4
+      #bd{:class => "#{controller.controller_name} #{controller.action_name}"}
+        = yield
+        .clear
+        
+    #hd
+      
+      
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-11919584-2");
+    pageTracker._trackPageview();
+    } catch(err) {}</script>
